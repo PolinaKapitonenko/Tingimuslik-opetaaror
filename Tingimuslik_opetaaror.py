@@ -29,43 +29,7 @@ for i in range(1,n+1,1): #range(n) - 0,1,2...n-1
         print("Külm")
 
 
-        #-----------------------------------------------------------------------------------
-#6
-kogus=randint(1,10)
-l=k=p=0
-for i in range(1,kogus+1,1):
-    pikk=int(input("Kui pikk sa oled? ")) #pikkus=randint(56,256)
-    if pikk>55 and pikk<160: 
-        print("Sa oled lühike")
-        l=l+1
-    elif pikk>=160 and pikk<180:
-        print("Sa oled keskmine")
-        k=k+1
-    elif pikk>=180 and pikk<260:
-        print("Sa oled pikk")
-        p=p+1
-    else:
-        print("Sisestage tegelik kõrgus")
-print(f"Lühike: {l} inimene\nKeskmine: {k} inimene\nPikk: {p} inimene")
 
-kogus=randint(1,10)
-l=k=p=0
-while kogus>0:
-    kogus-=1
-    sleep(1)
-    pikk=int(input("Kui pikk sa oled? ")) #pikkus=randint(56,256)
-    if pikk>55 and pikk<160: 
-        print("Sa oled lühike")
-        l=l+1
-    elif pikk>=160 and pikk<180:
-        print("Sa oled keskmine")
-        k=k+1
-    elif pikk>=180 and pikk<260:
-        print("Sa oled pikk")
-        p=p+1
-    else:
-        print("Sisestage tegelik kõrgus")
-print(f"Lühike: {l} inimene\nKeskmine: {k} inimene\nPikk: {p} inimene")
  
 
 #-----------------------------------------------------------------------------------
@@ -151,6 +115,48 @@ except:
     print("Vale Andmetüüp")
 
 
+
+
+#-----------------------------------------------------------------------------------
+#6
+kogus=randint(1,10)
+l=k=p=0
+for i in range(1,kogus+1,1):
+    pikk=int(input("Kui pikk sa oled? ")) #pikkus=randint(56,256)
+    if pikk>55 and pikk<160: 
+        print("Sa oled lühike")
+        l=l+1
+    elif pikk>=160 and pikk<180:
+        print("Sa oled keskmine")
+        k=k+1
+    elif pikk>=180 and pikk<260:
+        print("Sa oled pikk")
+        p=p+1
+    else:
+        print("Sisestage tegelik kõrgus")
+print(f"Lühike: {l} inimene\nKeskmine: {k} inimene\nPikk: {p} inimene")
+
+kogus=randint(1,10)
+l=k=p=0
+while kogus>0:
+    kogus-=1
+    sleep(1)
+    pikk=int(input("Kui pikk sa oled? ")) #pikkus=randint(56,256)
+    if pikk>55 and pikk<160: 
+        print("Sa oled lühike")
+        l=l+1
+    elif pikk>=160 and pikk<180:
+        print("Sa oled keskmine")
+        k=k+1
+    elif pikk>=180 and pikk<260:
+        print("Sa oled pikk")
+        p=p+1
+    else:
+        print("Sisestage tegelik kõrgus")
+print(f"Lühike: {l} inimene\nKeskmine: {k} inimene\nPikk: {p} inimene")
+
+
+
 #---------------------------------------------------------
 #9
 a=0
@@ -185,8 +191,6 @@ while a!=b:
     if a!=b:
         print("Andmetüüb on ok, vaid see ie ole ruud!")
 print(f"See on riid. Ruudi külg võrdub {a}")
-
-
 
 #-------------------------------------------------------------------
 #10
@@ -236,8 +240,6 @@ while True:
     except:
         print("Vale Andmetüüp")
 
-
-
 #---------------------------------------------------------
 #13
 while True:
@@ -286,10 +288,6 @@ try:
         print("Andmed peavad olema suuremad kui 0")
 except:
     print("Vale Andmetüüp")
-
-
-
-
 
 
 #-------------------------------------------------
