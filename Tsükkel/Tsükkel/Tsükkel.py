@@ -4,8 +4,7 @@ from winreg import *
 
 #------------------------------------------------------------------------
 #0
-print("while")
-print("Sa pead ära arvama juhuslikult mõistatatud arvu (1-50). 10 katsega")
+print("Sa pead ära juhuslikult mõistatatud arvu (1-50). 10 katsega")
 r=randint(1,50)
 n=1
 while n<=10:
@@ -151,25 +150,6 @@ for i in range(1,15):
     print()
 
 #----------------------------------
-while True:
-    print("Tere tulemast")
-    try:
-        print("Latte, 2.50 euro.")
-        print("Espresso, 2 euro.")
-        print("Cappiccino, 3 euro.")
-        print("Kakao, 2.20 euro.")
-        s=float(input("Ssestage summa:"))
-        if s<2 or s>3: break
-        m=input("Valige makseviis: ")
-        if m.lower()=="sularaha":
-            print("anna raha")
-
-        if m.lower()=="kaardiga":
-            n=int(input("Sisetage kaardi number: "))
-            print(n,"selle kaardiga on tehtud makse. ")
-
-    except:
-        print("")
 
 
 
