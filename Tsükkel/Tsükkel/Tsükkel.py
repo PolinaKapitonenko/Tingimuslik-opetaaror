@@ -151,5 +151,21 @@ for i in range(1,15):
 
 #----------------------------------
 
+#9 ülesanne
+n=int(input("Sisestage number n: "))
+for i in range(1,11):
+    print(f" {n} * {i} = {n*i}")
+print()
 
 
+#0(9)
+positivne=0
+negativne=0
+while True:
+    a=int(input("Sisetage number: "))
+    if a>0: positivne +=a
+    elif a<0: negativne +=a
+    else:break
+print("Positivne:", positivne, "Negativne:", negativne)
+
+#-------------------------------------------------------------------
