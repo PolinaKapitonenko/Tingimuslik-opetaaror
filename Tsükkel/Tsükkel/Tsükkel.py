@@ -2,7 +2,23 @@ from math import *
 from random import *
 from winreg import *
 
-
+#------------------------------------------------------------------------
+#0
+print("while")
+print("Sa pead ära arvama juhuslikult mõistatatud arvu (1-50). 10 katsega")
+r=randint(1,50)
+n=1
+while n<=10:
+    o=int(input("Sisesta arv: "))
+    if o==r:
+        print(f"Sa arvasid et sul läks {n} katset.")
+        break
+    elif r>o:
+        print("Väga väike")
+    elif o>r:
+        print("Väga suur")
+    n=n+1
+#--------------------------------------------------------------------
 #1
 while True:
     try:
@@ -83,18 +99,6 @@ if vastus==a:
 print()
 
 
-#------------------------------------------------------------------------
-#0
-n = input("Введите целое число: ")
-while type(n) != int:
-    try:
-        n = int(n)
-    except:
-        n = input("Введите целое число: ")
-if n % 2 == 0:
-    print("Четное")
-else:
-    print("Нечетное")
 
 
 #------------------------------------------------------------------------
@@ -146,7 +150,26 @@ for i in range(1,15):
     print(x, end="")
     print()
 
+#----------------------------------
+while True:
+    print("Tere tulemast")
+    try:
+        print("Latte, 2.50 euro.")
+        print("Espresso, 2 euro.")
+        print("Cappiccino, 3 euro.")
+        print("Kakao, 2.20 euro.")
+        s=float(input("Ssestage summa:"))
+        if s<2 or s>3: break
+        m=input("Valige makseviis: ")
+        if m.lower()=="sularaha":
+            print("anna raha")
 
+        if m.lower()=="kaardiga":
+            n=int(input("Sisetage kaardi number: "))
+            print(n,"selle kaardiga on tehtud makse. ")
+
+    except:
+        print("")
 
 
 
