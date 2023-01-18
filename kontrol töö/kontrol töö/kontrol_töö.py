@@ -10,7 +10,7 @@ for i in range(n):
     print("  !  -  !")
     print("   ------   ")
 
-#4
+#4 u
 
 
 kingitus = 1
